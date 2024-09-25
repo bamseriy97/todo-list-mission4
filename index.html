@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <i> <img width="80px" src="aset/mylogo.svg" alt=""></i>
+      <h1 class="by">Created by Eriyanto Enterprise</h1>
+    </nav>
+    <!-- close navbar -->
+
+    <div class="container">
+      <header>
+        <div class="fonthead">
+        <h1>To-Do List</h1>
+        <h1><q>What your plan?</q></h1>
+        <h2><q>Tackle Today, Own Tomorrow!</q></h2>
+        </div>
+        <div id="profile">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Masukkan nama kamu disini . . . " />
+
+          <label for="position">Position:</label>
+          <input type="text" id="position" placeholder="Masukkan posisi kamu disini . . . " />
+
+          <label for="dapartement">Dapartement:</label>
+          <select name="" id="dapart">
+            <option value="" selected disabled hidden>Choose Dapartement</option>
+            <option value="Engineering and Technology">Engineering and Technology</option>
+            <option value="Product Management">Product Management</option>
+            <option value="Legal and Finance">Legal and Finance</option>
+            <option value="Operations">Operations</option>
+            <option value="DataScience">Data Science</option>
+          </select>
+
+          <button id="update-profile-btn">Update Profile</button>
+        </div>
+        <div id="time">
+          <label for="date-picker">Pilih tanggal:</label>
+          <input type="date" id="date-picker" />
+        </div>
+      </header>
+      <div class="input-container">
+        <textarea id="task-input" placeholder="Masukan tugas kamu disini . . . "></textarea>
+        <select id="priority-level">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button id="add-task-btn">Upload tugas</button>
+      </div>
+
+    <table>
+      <h2>Task Planning</h2>
+     <tr>
+      <th>Check</th>
+      <th>Date</th>
+      <th>Task</th>
+      <th>Priority</th>
+      <th>Action</th>
+      <br><br>
+    </tr>
+      <tbody id="task-list"></tbody>
+      </table>
+<br><br>
+      <table>
+        <h2>Task Completed</h2>
+      <tr>
+      <th>Check</th>
+      <th>Date</th>
+      <th>Task</th>
+      <th>Priority</th>
+      <th>Action</th>
+    </tr>
+      <tbody id="done-list"></tbody>
+    </table>
+<button id="clear-all-btn">Hapus semua tugas</button>
+</div>
+    <footer>
+      
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
