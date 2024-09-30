@@ -37,7 +37,7 @@ document.getElementById("add-task-btn").addEventListener("click", function () {
     let newTask = document.createElement("tr");
     newTask.classList.add("priority-" + priority);
     newTask.innerHTML = `
-        <td><input type="checkbox" class="checkbox"></td>
+        <td><input type="checkbox" class="checkbox"></td><td>
         <td><span class="task-text">${formattedDate}</span></td>
         <td>${taskInput}</td>
         <td>${priority}</td>
